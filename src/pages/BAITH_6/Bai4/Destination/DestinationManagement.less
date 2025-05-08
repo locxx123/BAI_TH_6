@@ -1,0 +1,23 @@
+.destinationManagement {
+    .actionCard {
+        margin-bottom: 16px;
+    }
+
+    .tableCard {
+        overflow-x: auto;
+    }
+
+    :global {
+        @media (max-width: 576px) {
+
+            .ant-table-thead>tr>th,
+            .ant-table-tbody>tr>td {
+                padding: 8px;
+            }
+
+            .ant-card-body {
+                padding: 12px;
+            }
+        }
+    }
+}

@@ -1,3 +1,7 @@
+
+﻿import component from "@/locales/en-US/component";
+import path from "path";
+
 export default [
     {
         path: '/user',
@@ -67,6 +71,16 @@ export default [
     },
 	{
 		path: '/random-user',
+		name: 'RandomUser',
+		component: './RandomUser',
+		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/todolist',
+		name: 'Todolist',
+		component: './todolist',
+	},
+  }
 		name: 'Random User',
 		icon: "UserOutlined",
 		exact:true,
@@ -95,5 +109,18 @@ export default [
         icon: "DollarOutlined",
         exact: true,
         component: './BAITH_6/Bai3',
-   }
+   },
+     {
+		path: '/admin/statistics',
+		name: 'Statistics',
+		icon: 'BarChartOutlined',
+		component: './BAITH_6/Bai4/Statistic/Statistic'
+  },
+    {
+		path: '/admin',
+		name: 'Admin',
+		icon: 'UserOutlined',
+		component: "./BAITH_6/Bai4/Destination/DestinationManagement",
+	},
+
 ];
