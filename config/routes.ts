@@ -72,11 +72,28 @@ export default [
 		exact:true,
 		component:'./RandomUser',
 	},
+    // Bài thực hành 6
+    // Bài 1
+    // Khám phá điểm đến
     {
+		path: '/kham-pha-diem-den',
+		name: 'Khám phá điểm đến',
+		icon: "UserOutlined",
+		exact:true,
+		component:'./BAITH_6/Bai1',
+	},
+   {
+        path: '/lich-trinh',
+        name: 'Lịch trình',
+        icon: 'ScheduleOutlined',
+        exact: true,
+        component: './BAI_TH6/Bai2', // Sửa lại đúng đường dẫn component bạn đang dùng
+    },
+   {
         path: '/quan-ly-ngan-sach',
         name: 'Quản lý ngân sách',
         icon: "DollarOutlined",
         exact: true,
         component: './BAITH_6/Bai3',
-    },
+   }
 ];
