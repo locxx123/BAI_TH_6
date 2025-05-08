@@ -72,4 +72,11 @@ export default [
 		exact:true,
 		component:'./RandomUser',
 	},
+    {
+        path: '/quan-ly-ngan-sach',
+        name: 'Quản lý ngân sách',
+        icon: "DollarOutlined",
+        exact: true,
+        component: './BAITH_6/Bai3',
+    },
 ];
