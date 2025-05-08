@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Statistics } from '../../../services/Admin/Statistic/typing';
-import { fetchStatistics } from '../../../services/Admin/Statistic/statistics';
+import { Statistics } from '../../../services/BAITH_6/Bai4/Statistic/typing';
+import { fetchStatistics } from '../../../services/BAITH_6/Bai4/Statistic/statistics';
 
 export default () => {
     const [statistics, setStatistics] = useState<Statistics[]>([]);

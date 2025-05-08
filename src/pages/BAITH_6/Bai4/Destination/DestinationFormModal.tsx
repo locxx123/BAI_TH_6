@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, Form, Input, Select, InputNumber, Upload, Button, Row, Col } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-import { DestinationFormModalProps } from "../../services/Admin/Destination/typings";
+import { DestinationFormModalProps } from "../../../../services/BAITH_6/Bai4/Destination/typings";
 import styles from './DestinationFormModal.less';
 
 const { Option } = Select;

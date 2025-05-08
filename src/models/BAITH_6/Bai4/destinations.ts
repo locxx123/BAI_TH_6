@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Destination } from '../../../services/Admin/Destination/typings';
-import { fetchDestinations, addDestination, updateDestination, deleteDestination } from '../../../services/Admin/Destination/destinations';
+import { Destination } from '../../../services/BAITH_6/Bai4/Destination/typings';
+import { fetchDestinations, addDestination, updateDestination, deleteDestination } from '../../../services/BAITH_6/Bai4/Destination/destinations';
 import { Form } from 'antd';
 import { message } from 'antd';
 export default () => {

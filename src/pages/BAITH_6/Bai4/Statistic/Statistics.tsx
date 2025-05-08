@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, List, Table, Row, Col } from 'antd';
 import { useModel } from 'umi';
-import { Statistics } from '../../services/Admin/Statistic/typing';
+import { Statistics } from '../../../../services/BAITH_6/Bai4/Statistic/typing';
 import styles from './Statistics.less';
 
 const StatisticsPage: React.FC = () => {
