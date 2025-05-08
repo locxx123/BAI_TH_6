@@ -1,4 +1,5 @@
-﻿import path from "path";
+﻿import component from "@/locales/en-US/component";
+import path from "path";
 
 export default [
 	{
@@ -44,9 +45,16 @@ export default [
 		component: './todolist',
 	},
 	{
-		path: "/Quanlydondangkythanhvien",
-		name: "Quản lý đơn đăng ký thành viên",
-		component: "./Bai_2",
+		path: '/admin',
+		name: 'Admin',
+		icon: 'UserOutlined',
+		component: "./Admin/DestinationManagement",
+	},
+	{
+		path: '/admin/statistics',
+		name: 'Statistics',
+		icon: 'BarChartOutlined',
+		component: './Admin/Statistics',
 	},
 
 

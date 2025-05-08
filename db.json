@@ -1,68 +1,59 @@
 {
-  "clubs": [
+  "diem_den": [
     {
-      "id": "1",
-      "avatar": "https://via.placeholder.com/100",
-      "name": "Câu lạc bộ Kỹ năng",
-      "established": "2020-03-15",
-      "description": "<p>CLB rèn luyện kỹ năng mềm</p>",
-      "president": "Nguyễn Văn A",
-      "active": true
-    },
-    {
-      "id": "2",
-      "avatar": "https://via.placeholder.com/100",
-      "name": "Câu lạc bộ Công nghệ",
-      "established": "2019-06-21",
-      "description": "<p>CLB chuyên về lập trình, công nghệ</p>",
-      "president": "Trần Thị B",
-      "active": true
+      "id": "f3e5f3b4-21da-4f58-9cbb-213ac4e8a7a6",
+      "ten": "Vịnh Hạ Long",
+      "mo_ta": "Một trong những kỳ quan thiên nhiên thế giới, nổi tiếng với cảnh sắc biển và các hòn đảo đá vôi.",
+      "vi_tri": "Quảng Ninh, Việt Nam",
+      "loai": "Biển",
+      "muc_gia": "Trung bình",
+      "rating": 4.7,
+      "thoi_gian_can": 4,
+      "hinh_anh": "https://example.com/images/halong-bay.jpg"
     }
   ],
-  "applications": [
+  "lich_trinh": [
     {
-      "id": "1",
-      "fullName": "Lê Văn C",
-      "email": "le.c@example.com",
-      "phone": "0123456789",
-      "gender": "Nam",
-      "address": "Hà Nội",
-      "strengths": "Giao tiếp",
-      "clubId": 1,
-      "reason": "Muốn rèn luyện kỹ năng",
-      "status": "Approved",
-      "note": "",
-      "history": [
-        {
-          "action": "Approved",
-          "by": "Admin",
-          "timestamp": "2025-04-10T07:44:27.504Z",
-          "reason": ""
-        }
-      ]
-    },
-    {
-      "id": "4d2f",
-      "fullName": "Cuong Nguyen",
-      "email": "cuongnguyen2k5s@gmail.com",
-      "phone": "0383605017",
-      "gender": "Nam",
-      "address": "Hà Nam",
-      "clubId": 1,
-      "reason": "Yêu thích\n",
-      "status": "Approved"
+      "id": "a57d0c0f-1b8a-4747-b233-3db9519eab57",
+      "ten": "Lịch trình du lịch Hạ Long",
+      "tong_ngan_sach": 5000000,
+      "tong_thoi_gian": 3,
+      "ngay_bat_dau": "2025-05-01",
+      "ngay_ket_thuc": "2025-05-03"
     }
   ],
-  "members": [
+  "diem_den_lich_trinh": [
     {
-      "id": "1",
-      "fullName": "Phạm Thị D",
-      "email": "pham.d@example.com",
-      "phone": "0987654321",
-      "gender": "Nữ",
-      "address": "TP. Hồ Chí Minh",
-      "strengths": "Lập trình",
-      "clubId": 2
+      "id": "c1e2f3b4-21da-4f58-9cbb-213ac4e8a7a6",
+      "diem_den_id": "f3e5f3b4-21da-4f58-9cbb-213ac4e8a7a6",
+      "lich_trinh_id": "a57d0c0f-1b8a-4747-b233-3db9519eab57",
+      "thu_tu": 1
+    }
+  ],
+  "ngan_sach": [
+    {
+      "id": "b1b2b3b4-b5b6-b7b8-b9b0-b1b2b3b4b5b6",
+      "lich_trinh_id": "a57d0c0f-1b8a-4747-b233-3db9519eab57",
+      "loai": "Ăn uống",
+      "so_tien": 1000000
+    }
+  ],
+  "thong_ke": [
+    {
+      "id": "8dcb9d8c-dfdd-4e47-907f-bd8d3ec15a60",
+      "thang": "2025-05-01",
+      "tong_so_lich_trinh": 10,
+      "diem_den_pho_bien": [
+        "Vịnh Hạ Long",
+        "Phú Quốc"
+      ],
+      "doanh_thu": 10000000,
+      "doanh_thu_theo_loai": {
+        "Ăn uống": 3000000,
+        "Di chuyển": 2000000,
+        "Lưu trú": 5000000
+      },
+      "ngay_tao": "2025-05-08T10:00:00"
     }
   ]
 }

@@ -1,0 +1,26 @@
+.destinationModal {
+    :global {
+        .ant-modal-content {
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .ant-form-item {
+            margin-bottom: 16px;
+        }
+
+        .ant-input-number {
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            .ant-modal-body {
+                padding: 16px;
+            }
+
+            .ant-form-item-label {
+                padding-bottom: 4px;
+            }
+        }
+    }
+}

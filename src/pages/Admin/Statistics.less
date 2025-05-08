@@ -1,0 +1,28 @@
+.statisticsPage {
+    .statisticCard {
+        margin-bottom: 24px;
+    }
+
+    .summaryCard,
+    .popularCard,
+    .revenueCard {
+        height: 100%;
+    }
+
+    :global {
+        @media (max-width: 768px) {
+            .ant-card-head-title {
+                font-size: 14px;
+            }
+
+            .ant-card-body {
+                padding: 12px;
+            }
+
+            .ant-table-thead>tr>th,
+            .ant-table-tbody>tr>td {
+                padding: 8px;
+            }
+        }
+    }
+}
