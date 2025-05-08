@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import * as service from '@/services/BAI_TH6/Bai2/index';
+import * as service from '@/services/BAITH_6/Bai2/index';
 
 export default () => {
     const [lichTrinhList, setLichTrinhList] = useState<LichTrinh.LichTrinh[]>([]);

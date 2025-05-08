@@ -2,7 +2,7 @@ import { Button, Form, Input, DatePicker, Select, List, Space, Popconfirm } from
 import { useModel } from 'umi';
 import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import * as service from '@/services/BAI_TH6/Bai2/index';
+import * as service from '@/services/BAITH_6/Bai2/index';
 
 const FormLichTrinh = () => {
     const {
@@ -30,7 +30,7 @@ const FormLichTrinh = () => {
 
     const handleAddDiemDen = (id: string) => {
         if (diemDenLichTrinh.find((d) => d.diem_den_id === id)) return;
-        const diemDen = diemDenList.find((d) => d.id === id);
+        const diemDen = diemDenList.find((d: any) => d.id === id);
         setDiemDenLichTrinh([
             ...diemDenLichTrinh,
             {
@@ -98,7 +98,7 @@ const FormLichTrinh = () => {
                     onSelect={handleAddDiemDen}
                     style={{ width: 300 }}
                 >
-                    {diemDenList.map((d) => (
+                    {diemDenList.map((d: any) => (
                         <Select.Option key={d.id} value={d.id}>
                             {d.ten}
                         </Select.Option>
@@ -112,9 +112,10 @@ const FormLichTrinh = () => {
                 renderItem={(item, idx) => (
                     <List.Item
                         actions={[
-                            <Button size="small" onClick={() => handleSort(idx, idx - 1)}>↑</Button>,
-                            <Button size="small" onClick={() => handleSort(idx, idx + 1)}>↓</Button>,
+                            <Button key="up" size="small" onClick={() => handleSort(idx, idx - 1)}>↑</Button>,
+                            <Button key="down" size="small" onClick={() => handleSort(idx, idx + 1)}>↓</Button>,
                             <Popconfirm
+                                key="delete"
                                 title="Xóa điểm đến này?"
                                 onConfirm={() => handleRemoveDiemDen(item.diem_den_id)}
                             >
