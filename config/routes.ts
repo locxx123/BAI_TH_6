@@ -72,4 +72,14 @@ export default [
 		exact:true,
 		component:'./RandomUser',
 	},
+    // Bài thực hành 6
+    // Bài 1
+    // Khám phá điểm đến
+    {
+		path: '/kham-pha-diem-den',
+		name: 'Khám phá điểm đến',
+		icon: "UserOutlined",
+		exact:true,
+		component:'./BAITH_6/Bai1',
+	},
 ];
