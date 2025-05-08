@@ -72,4 +72,11 @@ export default [
 		exact:true,
 		component:'./RandomUser',
 	},
+    {
+        path: '/lich-trinh',
+        name: 'Lịch trình',
+        icon: 'ScheduleOutlined',
+        exact: true,
+        component: './BAI_TH6/Bai2', // Sửa lại đúng đường dẫn component bạn đang dùng
+    },
 ];
